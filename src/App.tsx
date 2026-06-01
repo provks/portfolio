@@ -8,6 +8,8 @@ import Results from "./components/layout/Results";
 import CTA from "./components/layout/CTA";
 import Footer from "./components/layout/Footer";
 import Contact from "./components/layout/Contact";
+import Industries from "./components/layout/Industries";
+import Process from "./components/layout/Process";
 function App() {
 
   return (
@@ -16,14 +18,13 @@ function App() {
       <Hero />
       <About />
       <Service />
+      <Industries />
+      <Process />
       <Projects /> 
       <Results /> 
       <CTA />
       <Contact />
       <Footer />
-      {/* <h1 className="text-5xl font-bold text-center pt-32">
-        Portfolio Coming Soon
-      </h1> */}
     </main>
   )
 }
