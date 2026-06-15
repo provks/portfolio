@@ -45,7 +45,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://linkedin.com/in/your-profile"
+                href="https://www.linkedin.com/in/varun-kumar-sharma/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-zinc-400 hover:text-white transition"
@@ -54,7 +54,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:hello@yourdomain.com"
+                href="mailto:varun.fsd@gmail.com"
                 className="text-zinc-400 hover:text-white transition"
               >
                 <FaEnvelope size={22} />

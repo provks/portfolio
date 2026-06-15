@@ -1,126 +1,226 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import profileImage from "../../assets/profile.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-white/5 blur-3xl rounded-full" />
-
+    <section className="min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-          >
-            {/* Availability Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-zinc-300 mb-8">
-              <span className="w-2 h-2 rounded-full bg-green-400" />
-              Available for freelance projects
-            </div>
-
-            {/* Heading */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
-              Building
-              <span className="block text-zinc-400">
-                scalable backend systems
-              </span>
-              for modern businesses.
-            </h1>
-
-            {/* Description */}
-            <p className="mt-8 text-lg text-zinc-400 leading-relaxed max-w-2xl">
-              Senior Full Stack Engineer with 5+ years of experience
-              specializing in Node.js, NestJS, Express, React, PostgreSQL,
-              and cloud-ready SaaS architecture.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition duration-300"
+          
+          {/* LEFT SIDE */}
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              <div
+                className="
+                  inline-flex
+                  items-center
+                  px-4 py-2
+                  rounded-full
+                  border border-emerald-500/20
+                  bg-emerald-500/10
+                  text-emerald-400
+                  text-sm
+                "
               >
-                Hire Me
-                <FaArrowRight className="group-hover:translate-x-1 transition" />
-              </a>
+                ● Available for Freelance Projects
+              </div>
 
-              <a
-                href="#projects"
-                className="px-6 py-3 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300"
+              <h1
+                className="
+                  mt-8
+                  text-5xl
+                  md:text-7xl
+                  font-bold
+                  leading-tight
+                "
               >
-                View Projects
-              </a>
-            </div>
+                Building scalable
+                <span className="block text-zinc-400">
+                  SaaS products &
+                </span>
+                backend systems.
+              </h1>
 
-            {/* Social Links */}
-            <div className="mt-10 flex items-center gap-6">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-2xl text-zinc-400 hover:text-white transition duration-300"
+              <p
+                className="
+                  mt-8
+                  text-xl
+                  text-zinc-400
+                  max-w-2xl
+                  leading-relaxed
+                "
               >
-                <FaGithub />
-              </a>
+                Full Stack Engineer specializing in
+                Node.js, NestJS, React, PostgreSQL,
+                and cloud infrastructure. Helping
+                businesses launch, scale, and
+                automate software products.
+              </p>
 
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-2xl text-zinc-400 hover:text-white transition duration-300"
-              >
-                <FaLinkedin />
-              </a>
-            </div>
-          </motion.div>
+              <div className="flex gap-4 mt-10">
+                <a
+                  href="#contact"
+                  className="
+                    px-8 py-4
+                    rounded-2xl
+                    bg-white
+                    text-black
+                    font-semibold
+                  "
+                >
+                  Hire Me
+                </a>
 
-          {/* Right Side Card */}
+                <a
+                  href="#projects"
+                  className="
+                    px-8 py-4
+                    rounded-2xl
+                    border border-white/10
+                    bg-white/5
+                  "
+                >
+                  View Projects
+                </a>
+              </div>
+
+              {/* Trust Badges */}
+
+              <div className="flex flex-wrap gap-3 mt-10">
+                {[
+                  "5+ Years Experience",
+                  "20+ Projects Delivered",
+                  "Available Worldwide",
+                  "Long-Term Support",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="
+                      px-4 py-2
+                      rounded-full
+                      bg-white/5
+                      border border-white/10
+                      text-sm
+                    "
+                  >
+                    ✓ {item}
+                  </div>
+                ))}
+              </div>
+
+              {/* Social */}
+
+              <div className="flex gap-5 mt-10">
+                <a href="#">
+                  <FaGithub size={26} />
+                </a>
+
+                <a href="#">
+                  <FaLinkedin size={26} />
+                </a>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* RIGHT SIDE */}
+
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative"
+            transition={{ duration: 0.7 }}
+            className="relative flex justify-center"
           >
-            <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 shadow-2xl">
-              {/* Window Header */}
-              <div className="flex items-center gap-2 mb-8">
-                <div className="w-3 h-3 rounded-full bg-red-400" />
-                <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                <div className="w-3 h-3 rounded-full bg-green-400" />
+            <div className="relative">
+              <img
+                src={profileImage}
+                alt="VS"
+                className="
+                  w-[380px]
+                  h-[500px]
+                  object-cover
+                  rounded-[32px]
+                  border border-white/10
+                "
+              />
+
+              {/* Floating Card 1 */}
+
+              <div
+                className="
+                  absolute
+                  -left-10
+                  top-16
+                  bg-black/70
+                  backdrop-blur-xl
+                  border border-white/10
+                  rounded-2xl
+                  p-4
+                "
+              >
+                <p className="text-sm text-zinc-400">
+                  Experience
+                </p>
+
+                <h3 className="text-2xl font-bold">
+                  5+ Years
+                </h3>
               </div>
 
-              {/* Code Snippet */}
-              <pre className="overflow-x-auto text-sm md:text-base text-zinc-300 leading-relaxed">
-                <code>{`const engineer = {
-  name: "VS",
-  role: "Senior Full Stack Engineer",
-  experience: "5+ years",
+              {/* Floating Card 2 */}
 
-  backend: [
-    "Node.js",
-    "NestJS",
-    "Express"
-  ],
+              <div
+                className="
+                  absolute
+                  -right-10
+                  bottom-20
+                  bg-black/70
+                  backdrop-blur-xl
+                  border border-white/10
+                  rounded-2xl
+                  p-4
+                "
+              >
+                <p className="text-sm text-zinc-400">
+                  Projects
+                </p>
 
-  frontend: [
-    "React",
-    "TypeScript"
-  ],
+                <h3 className="text-2xl font-bold">
+                  20+
+                </h3>
+              </div>
 
-  databases: [
-    "PostgreSQL",
-    "MongoDB"
-  ],
+              {/* Bottom Profile Card */}
 
-  cloud: [
-    "AWS",
-    "Docker"
-  ]
-}`}</code>
-              </pre>
+              <div
+                className="
+                  absolute
+                  -bottom-8
+                  left-1/2
+                  -translate-x-1/2
+                  w-[90%]
+                  rounded-3xl
+                  bg-black/80
+                  backdrop-blur-xl
+                  border border-white/10
+                  p-6
+                "
+              >
+                <h3 className="font-semibold">
+                  VS
+                </h3>
+
+                <p className="text-zinc-400 text-sm mt-2">
+                  📍 India (GMT+5:30)
+                </p>
+
+                <p className="text-zinc-400 text-sm">
+                  🌍 Working with clients worldwide
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>

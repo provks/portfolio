@@ -49,20 +49,20 @@ const Contact = () => {
             className="space-y-6"
           >
             <a
-              href="mailto:hello@yourdomain.com"
+              href="mailto:varun.fsd@gmail.com"
               className="flex items-center gap-5 p-6 rounded-3xl border border-white/10 bg-white/5 hover:border-white/20 transition"
             >
               <FaEnvelope className="text-2xl" />
               <div>
                 <h3 className="font-semibold">Email</h3>
                 <p className="text-zinc-400">
-                  hello@yourdomain.com
+                  varun.fsd@gmail.com
                 </p>
               </div>
             </a>
 
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/varun-kumar-sharma/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-5 p-6 rounded-3xl border border-white/10 bg-white/5 hover:border-white/20 transition"
