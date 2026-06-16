@@ -4,10 +4,9 @@ import profileImage from "../../assets/profile.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center">
+    <section className="min-h-screen flex items-center pt-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          
           {/* LEFT SIDE */}
           <div>
             <motion.div
@@ -18,7 +17,7 @@ const Hero = () => {
                 className="
                   inline-flex
                   items-center
-                  px-4 py-2
+                  px-1 py-1
                   rounded-full
                   border border-emerald-500/20
                   bg-emerald-500/10
@@ -26,42 +25,34 @@ const Hero = () => {
                   text-sm
                 "
               >
-                ● Available for Freelance Projects
+                ● Available for Contract / Freelance Projects
               </div>
 
-              <h1
-                className="
-                  mt-8
-                  text-5xl
-                  md:text-7xl
-                  font-bold
-                  leading-tight
-                "
-              >
+              <h1 className="mt-2 text-5xl md:text-5xl font-bold leading-tight">
                 Building scalable
+                <span className="block text-zinc-400">SaaS products,</span>
+                <span className="block">backend systems &</span>
                 <span className="block text-zinc-400">
-                  SaaS products &
+                  AI-powered applications.
                 </span>
-                backend systems.
               </h1>
 
               <p
                 className="
-                  mt-8
+                  mt-5
                   text-xl
                   text-zinc-400
                   max-w-2xl
                   leading-relaxed
                 "
               >
-                Full Stack Engineer specializing in
-                Node.js, NestJS, React, PostgreSQL,
-                and cloud infrastructure. Helping
-                businesses launch, scale, and
-                automate software products.
+                Full Stack Engineer specializing in Node.js, NestJS, React,
+                PostgreSQL, MongoDB, cloud infrastructure, and AI integrations.
+                I help startups and businesses launch, automate, and scale
+                software products that drive measurable business outcomes.
               </p>
 
-              <div className="flex gap-4 mt-10">
+              <div className="flex gap-4 mt-8">
                 <a
                   href="#contact"
                   className="
@@ -72,7 +63,7 @@ const Hero = () => {
                     font-semibold
                   "
                 >
-                  Hire Me
+                  Start a Project
                 </a>
 
                 <a
@@ -84,16 +75,17 @@ const Hero = () => {
                     bg-white/5
                   "
                 >
-                  View Projects
+                  View Case Studies
                 </a>
               </div>
 
               {/* Trust Badges */}
 
-              <div className="flex flex-wrap gap-3 mt-10">
+              <div className="flex flex-wrap gap-3 mt-8">
                 {[
                   "5+ Years Experience",
                   "20+ Projects Delivered",
+                  "SaaS & AI Solutions",
                   "Available Worldwide",
                   "Long-Term Support",
                 ].map((item) => (
@@ -114,7 +106,7 @@ const Hero = () => {
 
               {/* Social */}
 
-              <div className="flex gap-5 mt-10">
+              <div className="flex gap-5 mt-8">
                 <a href="#">
                   <FaGithub size={26} />
                 </a>
@@ -161,13 +153,9 @@ const Hero = () => {
                   p-4
                 "
               >
-                <p className="text-sm text-zinc-400">
-                  Experience
-                </p>
+                <p className="text-sm text-zinc-400">Experience</p>
 
-                <h3 className="text-2xl font-bold">
-                  5+ Years
-                </h3>
+                <h3 className="text-2xl font-bold">5+ Years</h3>
               </div>
 
               {/* Floating Card 2 */}
@@ -184,13 +172,9 @@ const Hero = () => {
                   p-4
                 "
               >
-                <p className="text-sm text-zinc-400">
-                  Projects
-                </p>
+                <p className="text-sm text-zinc-400">Projects</p>
 
-                <h3 className="text-2xl font-bold">
-                  20+
-                </h3>
+                <h3 className="text-2xl font-bold">20+</h3>
               </div>
 
               {/* Bottom Profile Card */}
@@ -209,9 +193,7 @@ const Hero = () => {
                   p-6
                 "
               >
-                <h3 className="font-semibold">
-                  VS
-                </h3>
+                <h3 className="font-semibold">VS</h3>
 
                 <p className="text-zinc-400 text-sm mt-2">
                   📍 India (GMT+5:30)
