@@ -4,7 +4,7 @@ import profileImage from "../../assets/profile.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center pt-24">
+    <section className="min-h-screen flex items-center pt-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT SIDE */}
@@ -107,11 +107,11 @@ const Hero = () => {
               {/* Social */}
 
               <div className="flex gap-5 mt-8">
-                <a href="#">
+                <a href="https://github.com/provks" target="_blank" rel="noopener noreferrer">
                   <FaGithub size={26} />
                 </a>
 
-                <a href="#">
+                <a href="https://www.linkedin.com/in/varun-kumar-sharma/" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin size={26} />
                 </a>
               </div>
