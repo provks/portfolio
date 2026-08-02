@@ -77,7 +77,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/provks"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-5 p-6 rounded-3xl border border-white/10 bg-white/5 hover:border-white/20 transition"

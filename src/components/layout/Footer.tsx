@@ -36,7 +36,7 @@ const Footer = () => {
 
             <div className="flex gap-5 mt-8">
               <a
-                href="https://github.com/your-github"
+                href="https://github.com/provks"
                 target="_blank"
                 rel="noreferrer"
                 className="text-zinc-400 hover:text-white transition"
@@ -55,6 +55,8 @@ const Footer = () => {
 
               <a
                 href="mailto:varun.fsd@gmail.com"
+                target="_blank"
+                rel="noreferrer"
                 className="text-zinc-400 hover:text-white transition"
               >
                 <FaEnvelope size={22} />
