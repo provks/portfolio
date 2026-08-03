@@ -196,7 +196,7 @@ const Hero = () => {
                 <h3 className="font-semibold">VS</h3>
 
                 <p className="text-zinc-400 text-sm mt-2">
-                  📍 India (GMT+5:30)
+                  📍 Delhi, India (GMT+5:30)
                 </p>
 
                 <p className="text-zinc-400 text-sm">
